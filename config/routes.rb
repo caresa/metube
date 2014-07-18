@@ -1,4 +1,34 @@
 Rails.application.routes.draw do
+  get 'shows/show_seinfeld'
+
+  get 'movies/show_matilda'
+
+  get 'movies/show_gladiator'
+
+  get 'movies/show_clockworkorange'
+
+  get 'movies/show_rosemarysbaby'
+
+  get 'shows/show_seinfeld'
+
+  get 'shows/show_friends'
+
+  get 'shows/show_wilfred'
+
+  get '/movies/gladiator', to: 'movies#show_gladiator'
+
+  get '/movies/matilda', to: 'movies#show_matilda'
+
+  get 'movies/clockworkorange', to: 'movies#show_clockworkorange'
+
+  get 'movies/rosemarysbaby', to: 'movies#show_rosemarysbaby'
+
+  get 'shows/seinfeld', to: 'shows#show_seinfeld'
+
+  get 'shows/friends', to: 'shows#show_friends'
+
+  get 'shows/wilfred', to: 'shows#show_wilfred'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
